@@ -4,4 +4,5 @@ This template comes with everything needed to launch a bootstrap website
 
 1. Set up Helmet (< head > info)
 2. Set up Google Analytics
-3. Build
+3. Change favicon
+4. Build
