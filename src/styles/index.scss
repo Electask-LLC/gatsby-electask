@@ -1,0 +1,533 @@
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+@import "print";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.roboto {
+  font-family: 'roboto', sans-serif !important;
+}
+
+p, small {
+	font-family: 'Lora', serif;
+}
+
+.lora {
+  font-family: 'Lora', serif !important;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.link {
+	color: #343a40 !important;
+	border-bottom: 2px solid #2979ff !important;
+	transition: all 0.3s;
+}
+
+.link-light {
+  color: #ffffff !important;
+  border-bottom: 2px solid #2979ff !important;
+  transition: all 0.3s;
+}
+
+.link:hover, .link-light:hover {
+	color: $primary !important;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.my-6, .mt-6 {
+	margin-top: 6rem;
+}
+
+.my-7, .mt-7 {
+	margin-top: 7rem;
+}
+
+.my-8, .mt-8 {
+	margin-top: 8rem;
+}
+
+.my-6, .mb-6 {
+	margin-bottom: 6rem;
+}
+
+.my-7, .mb-7 {
+	margin-bottom: 7rem;
+}
+
+.my-8, .mb-8 {
+	margin-bottom: 8rem;
+}
+
+.py-6, .pt-6 {
+	padding-top: 6rem;
+}
+
+.py-7, .pt-7 {
+	padding-top: 7rem;
+}
+
+.py-8, .pt-8 {
+	padding-top: 8rem;
+}
+
+.py-6, .pb-6 {
+	padding-bottom: 6rem;
+}
+
+.py-7, .pb-7 {
+	padding-bottom: 7rem;
+}
+
+.py-8, .pb-8 {
+	padding-bottom: 8rem;
+}
+
+.border-radius-3 {
+	border-radius: 3px !important;
+}
+
+.border-radius-15 {
+	border-radius: 15px !important;
+}
+
+footer {
+	padding: 5rem 0 2rem 0;
+	background-color: #031926;
+}
+
+.hero-bkg {
+	background-image: url('../../assets/images/bkg3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.box-shadow {
+	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+	margin: 10px;
+	width: 100%;
+	padding: 20px;
+}
+
+.fixed-top {
+  position: static !important;
+}
+
+.striped {
+	background: repeating-linear-gradient(
+	  55deg,
+	  #2979ff,
+	  #2979ff 5px,
+	  #fff 5px,
+	  #fff 100px
+	);
+}
+
+.navbar-light .navbar-toggler {
+	border: none;
+}
+
+.placeholder-light {
+	border-top: none !important;
+	border-right: none !important;
+	border-left: none !important;
+	border-bottom: 1px solid #d6d6d6 !important;
+	border-radius: 0 !important;
+}
+
+.placeholder-light:focus {
+	box-shadow: 0 5px 0px 0rem #2979ff !important;
+	border-radius: 0 !important;
+}
+
+.placeholder-light::placeholder {
+	color: #d6d6d6;
+}
+
+.hand {
+  display: none;
+}
+
+@media(min-width: 768px) {
+	.md-order-2 {
+		order: 2;
+	}
+
+  .fixed-top {
+    position: fixed !important;
+  }
+
+  .hand {
+    position: absolute;
+    display: initial;
+    left: -30px;
+    top: 50px;
+  }
+}
+
+.cloud {
+  width: 350px; height: 120px;
+
+  background: #2979ff;
+  background: linear-gradient(top, #2979ff 100%);
+  background: -webkit-linear-gradient(top, #2979ff 100%);
+  background: -moz-linear-gradient(top, #2979ff 100%);
+  background: -ms-linear-gradient(top, #2979ff 100%);
+  background: -o-linear-gradient(top, #2979ff 100%);
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+
+  position: absolute;
+  margin: 120px auto 20px;
+  z-index:-1;
+  transition: ease 1s;
+}
+
+.cloud:after, .cloud:before {
+  content: '';
+  position: absolute;
+  background: #2979ff;
+  z-index: -1
+}
+
+.cloud:after {
+  width: 100px; height: 100px;
+  top: -50px; left: 50px;
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.cloud:before {
+  width: 180px; height: 180px;
+  top: -90px; right: 50px;
+
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+}
+
+.x1 {
+  top:-50px;
+  left:100px;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+  opacity: 0.9;
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite;
+}
+
+.x1_5{
+  top:-80px;
+  left:250px;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+  -webkit-animation: moveclouds 17s linear infinite;
+  -moz-animation: moveclouds 17s linear infinite;
+  -o-animation: moveclouds 17s linear infinite; 
+}
+
+.x2 {
+  left: 250px;
+  top:30px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; 
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+  left: 250px; bottom: -70px;
+
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.8; 
+
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x4 {
+  left: 470px; botttom: 20px;
+
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+  left: 200px; top: 300px;
+
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0.8; 
+
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+
+.ne-bkg {
+  background-image: url('../../assets/images/northeast-bkg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gradient {
+  // background: rgb(41,98,255);
+  // background: linear-gradient(110deg, #fe5c30 0%,  #2962ff 50%, #8c9eff 100%);
+  background: linear-gradient(to right, #2962ff 0%, #0a6692 55%);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.arrow {
+  transition: margin-right 0.3s;
+}
+
+.arrow:hover {
+  margin-right: 5px;
+}
+
+.bkg-image-octo {
+  position: absolute;
+  right: 20%;
+  top: 0px;
+}
+
+.video {
+  transition: all 0.3s;
+}
+
+.video:hover {
+  border-bottom: 1px solid $primary;
+  cursor: pointer;
+}
+
+.player {
+  max-width: 750px;
+  border: 5px solid rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+
+/* This css is only applied when fullscreen is active. */
+.player:fullscreen {
+  max-width: none;
+  width: 100%;
+}
+
+.player:-webkit-full-screen {
+  max-width: none;
+  width: 100%;
+}
+
+.player__button {
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  max-width: 50px;
+  min-width: 50px;
+}
+
+.player__button:focus {
+  border-color: $primary;
+}
+
+.player__slider {
+  width: 10px;
+  height: 30px;
+}
+
+.player__controls {
+  // display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%) translateY(-5px);
+  transition: all .3s;
+  flex-wrap: wrap;
+  background: black;
+}
+
+.player:hover .player__controls {
+  transform: translateY(0);
+}
+
+.player:hover .progress {
+  height: 15px;
+}
+
+.progress {
+  flex: 10;
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  height: 5px;
+  transition: height 0.3s;
+  background: rgba(0,0,0,0.5);
+  cursor: ew-resize;
+}
+
+.progress__filled {
+  width: 50%;
+  background: $primary;
+  flex: 0;
+  flex-basis: 2%;
+}
+
+/* unholy css to style input type="range" */
+
+input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+  margin: 0 5px;
+}
+
+.toggle {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+  background: #546e7a;
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: $primary;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.5px;
+  box-shadow:0 0 2px rgba(0,0,0,0.2);
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: $secondary;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+  background: #ffffff;
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: $primary;
+  cursor: pointer;
+}
