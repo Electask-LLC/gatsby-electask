@@ -1,8 +1,4 @@
-# Gatsby, Bootstrap, Google Analytics, React Helmet, SEO, Images
+# Marketing website for Electask
 
-This template comes with everything needed to launch a bootstrap website
-
-1. Set up Helmet (< head > info)
-2. Set up Google Analytics
-3. Change favicon
-4. Build
+The main thing this site has to offer is the testimonial video of Jill LaVine
+and a way for interested parties to schedule a time to meet
