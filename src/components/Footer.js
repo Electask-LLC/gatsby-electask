@@ -1,89 +1,98 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import {Link, useStaticQuery, graphql} from 'gatsby';
+import styled from 'styled-components';
+
+const StyledFooter = styled.footer`
+    background: #232323;
+`;
 
 const Footer = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            opag: file(relativePath: {regex: "/operating-agreement.pdf/"}) {
+                publicURL
+            }
+        }
+    `);
     return (
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 text-left">
-                        <small
-                            style="font-family: 'Roboto', sans-serif;"
-                            class="font-weight-bold text-white"
-                        >
+        <StyledFooter className="py-5">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-12 col-md-6 text-left">
+                        <small className="font-weight-bold text-white">
                             Electask
                         </small>
-                        <p class="mb-0">
-                            <small class="text-white">
+                        <p className="mb-0">
+                            <small className="text-white">
                                 &copy; <span id="year"></span> Electask, LLC
                             </small>
                         </p>
-                        <small class="text-white">
+                        <small className="text-white">
                             Icons by
                             <a
                                 href="https://www.freepik.com"
-                                class="text-white"
+                                className="text-white"
                             >
                                 Freepik
                             </a>
                             from
                             <a
                                 href="https://www.flaticon.com"
-                                class="text-white"
+                                className="text-white"
                             >
                                 www.flaticon.com
                             </a>
                         </small>
                         <br />
                     </div>
-                    <div class="col-12 col-md-2">
-                        <h6 class="font-weight-bold text-white">
-                            <span class="border-bottom">Support</span>
+                    <div className="col-12 col-md-2">
+                        <h6 className="font-weight-bold text-white">
+                            <span className="border-bottom">Support</span>
                         </h6>
-                        <small>
-                            <Link to="./privacy-policy" class="text-white">
+                        {/* <small>
+                            <Link to="./privacy-policy" className="text-white">
                                 Privacy Policy
                             </Link>
                         </small>
-                        <br />
+                        <br /> */}
                         <small>
-                            <Link
-                                to="./operating-agreement.pdf"
-                                class="text-white"
+                            <a
+                                href={data.opag.publicURL}
+                                className="text-white"
                             >
                                 Operating Agreement
-                            </Link>
+                            </a>
                         </small>
                         <br />
                         <small>
                             <a
                                 href="mailto:tom@electask.com"
-                                class="text-white"
+                                className="text-white"
                             >
                                 Contact Me
                             </a>
                         </small>
                     </div>
-                    <div class="col-12 col-md-2">
-                        <h6 class="font-weight-bold text-white">
-                            <span class="border-bottom">Company</span>
+                    <div className="col-12 col-md-2">
+                        <h6 className="font-weight-bold text-white">
+                            <span className="border-bottom">Company</span>
                         </h6>
                         <small>
                             <a
                                 href="mailto:tom@electask.com"
-                                class="text-white"
+                                className="text-white"
                             >
                                 Careers
                             </a>
                         </small>
                         ><br />
                     </div>
-                    <div class="col-12 col-md-2">
-                        <h6 class="font-weight-bold text-white">
-                            <span class="border-bottom">Product</span>
+                    <div className="col-12 col-md-2">
+                        <h6 className="font-weight-bold text-white">
+                            <span className="border-bottom">Product</span>
                         </h6>
                         <small>
-                            <Link href="/schedule" class="text-white">
+                            <Link href="/schedule" className="text-white">
                                 Schedule a Demo
                             </Link>
                         </small>
@@ -91,7 +100,7 @@ const Footer = () => {
                         <small>
                             <a
                                 href="https://app.electask.com"
-                                class="text-white"
+                                className="text-white"
                             >
                                 Login
                             </a>
@@ -99,7 +108,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </StyledFooter>
     );
 };
 
