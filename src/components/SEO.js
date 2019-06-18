@@ -14,7 +14,6 @@ export default () => {
             }
         }
     `);
-    console.log(data);
     return (
         <Helmet>
             <meta charSet="utf-8" />
