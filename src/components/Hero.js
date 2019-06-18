@@ -22,7 +22,7 @@ export default () => (
                     Schedule to See Electask &rarr;
                 </Link>
             </div>
-            <div className="col-12 col-md-7 mt-5 mt-md-0">
+            <div className="col-12 col-md-7 mt-5 mt-md-0 d-none d-md-block">
                 <Video
                     preload="none"
                     className="shadow"
@@ -35,6 +35,16 @@ export default () => (
                     />
                     Sorry, your browser doesn't support embedded videos.
                 </Video>
+            </div>
+        </div>
+        <div className="row justify-content-centermt-5 mt-md-0 d-block d-md-none">
+            <div className="text-center">
+                <Link
+                    to="/video"
+                    className=" h3 font-weight-bold text-dark border-bottom border-dark"
+                >
+                    Watch Video
+                </Link>
             </div>
         </div>
     </div>
