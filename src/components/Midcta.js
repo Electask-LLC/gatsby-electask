@@ -6,12 +6,15 @@ import '../styles/index.scss';
 const Big = styled.p`
     font-weight: 700;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
 `;
 
 export default () => (
-    <div className="container border border-dark p-5 my-5">
-        <div className="col-12 col-md-10 mx-auto text-center bg-dark rounded shadow p-5">
+    <div className="container border border-dark p-2 p-md-5 my-5">
+        <div className="col-12 col-md-10 mx-auto text-center bg-dark rounded shadow p-4 p-md-5">
             <Big>Electask excels at communication and visualization</Big>
         </div>
         <div className="text-center mt-5">

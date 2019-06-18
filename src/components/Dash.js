@@ -17,13 +17,13 @@ export default () => {
     return (
         <div className="container">
             <div className="row my-5 py-3 py-md-5 justify-content-center">
-                <div className="col-12 col-md-4 order-md-last">
+                <div className="col-12 col-md-6 col-lg-4 order-md-last">
                     <Img
                         fluid={data.dash.sharp.fluid}
                         alt="Our dashboard helps all your employees stay on the same page."
                     />
                 </div>
-                <div className="col-12 col-md-4 order-md-first">
+                <div className="col-12 col-md-6 col-lg-4 order-md-first">
                     <h3 class="mb-md-4 font-weight-bold">
                         More aware. More control.
                     </h3>

@@ -15,7 +15,7 @@ const Footer = () => {
         }
     `);
     return (
-        <StyledFooter className="py-5">
+        <StyledFooter className="py-5 mt-5 mt-md-0">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-6 text-left">
@@ -24,7 +24,7 @@ const Footer = () => {
                         </small>
                         <p className="mb-0">
                             <small className="text-white">
-                                &copy; <span id="year"></span> Electask, LLC
+                                &copy; {new Date().getFullYear()} Electask, LLC
                             </small>
                         </p>
                         <small className="text-white">
@@ -35,6 +35,7 @@ const Footer = () => {
                             >
                                 Freepik
                             </a>
+                            <br />
                             from
                             <a
                                 href="https://www.flaticon.com"

@@ -17,14 +17,14 @@ export default () => {
     return (
         <div className="container">
             <div className="row my-5 py-3 py-md-5 justify-content-center">
-                <div className="col-12 col-md-4 order-md-last">
+                <div className="col-12 col-md-6 col-lg-4 order-md-last">
                     <Img
                         fluid={data.reports.sharp.fluid}
                         alt="Our dashboard helps all your employees stay on the same page."
                     />
                 </div>
-                <div className="col-12 col-md-4 order-md-first">
-                    <h3 class="h3 font-weight-bold mt-5">See How It's Going</h3>
+                <div className="col-12 col-md-6 col-lg-4 order-md-first">
+                    <h3 class="h3 font-weight-bold">See How It's Going</h3>
                     <p class="font-weight-bold">
                         Electask offers regular reports showing what was
                         completed, what's being worked on, and what is falling

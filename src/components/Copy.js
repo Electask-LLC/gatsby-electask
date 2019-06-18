@@ -17,14 +17,14 @@ export default () => {
     return (
         <div className="container">
             <div className="row my-5 py-3 py-md-5 justify-content-center">
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-md-6 col-lg-4">
                     <Img
                         fluid={data.copy.sharp.fluid}
                         alt="Copy tasks from one election to another automatically"
                     />
                 </div>
-                <div className="col-12 col-md-4">
-                    <h3 className="h3 font-weight-bold mt-5">
+                <div className="col-12 col-md-6 col-lg-4">
+                    <h3 className="h3 font-weight-bold">
                         Copy Tasks Over Automatically
                     </h3>
                     <p className="font-weight-bold">

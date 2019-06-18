@@ -7,9 +7,8 @@
 module.exports = {
     siteMetadata: {
         siteUrl: `https://electask.com`,
-        title: 'Election Task Calendar',
-        description:
-            "Electask helps you manage your election tasks.  With the help of Electask, you'll have smoother elections and better communication.  Stay on top of election tasks."
+        title: `Election Task Calendar`,
+        description: `Electask helps you manage your election tasks.  With the help of Electask, you'll have smoother elections and better communication.  Stay on top of election tasks.`
     },
     plugins: [
         {
@@ -78,6 +77,27 @@ module.exports = {
                 // whitelist: ['whitelist'], // Don't remove this selector
                 // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
                 // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+            }
+        },
+        {
+            resolve: `gatsby-plugin-google-tagmanager`,
+            options: {
+                id: 'GTM-KL8BJMB',
+
+                // Include GTM in development.
+                // Defaults to false meaning GTM will only be loaded in production.
+                includeInDevelopment: false
+
+                // // Specify optional GTM environment details.
+                // gtmAuth: 'YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_AUTH_STRING',
+                // gtmPreview: 'YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME',
+                // dataLayerName: 'GTM-KL8BJMB'
+            }
+        },
+        {
+            resolve: 'gatsby-plugin-drift',
+            options: {
+                appId: 'batxtn7gv3nt'
             }
         }
     ]
