@@ -1,6 +1,10 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import ReactPlayer from 'react-player';
+import styled from 'styled-components';
+
+const Video = styled.video`
+    width: 100%;
+`;
 
 export default () => (
     <div className="container">
@@ -19,11 +23,13 @@ export default () => (
                 </Link>
             </div>
             <div className="col-12 col-md-7 mt-5 mt-md-0">
-                <ReactPlayer
-                    title="Jill LeVine"
-                    url="https://player.vimeo.com/video/342514605"
-                    width="100%"
-                />
+                <Video className="shadow" controls>
+                    <source
+                        src="https://electask.s3-us-west-1.amazonaws.com/jill.mp4"
+                        type="video/mp4"
+                    />
+                    Sorry, your browser doesn't support embedded videos.
+                </Video>
             </div>
         </div>
     </div>
