@@ -16,6 +16,7 @@
         "babel-plugin-styled-components": "^1.10.0",
         "gatsby": "^2.9.2",
         "gatsby-image": "^2.1.4",
+        "gatsby-plugin-crisp-chat": "^3.1.0",
         "gatsby-plugin-drift": "^1.0.0",
         "gatsby-plugin-google-analytics": "^2.0.21",
         "gatsby-plugin-google-tagmanager": "^2.0.15",
