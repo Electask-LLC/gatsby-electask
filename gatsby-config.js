@@ -69,12 +69,6 @@ module.exports = {
                 // gtmPreview: 'YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME',
                 // dataLayerName: 'GTM-KL8BJMB'
             }
-        },
-        {
-            resolve: 'gatsby-plugin-drift',
-            options: {
-                appId: 'batxtn7gv3nt'
-            }
         }
     ]
 };
