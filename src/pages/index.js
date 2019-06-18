@@ -9,7 +9,6 @@ import Reports from '../components/Reports';
 import Midcta from '../components/Midcta';
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
-import '../styles/index.scss';
 
 export default () => (
     <React.Fragment>

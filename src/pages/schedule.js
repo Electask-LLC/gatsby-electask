@@ -2,7 +2,6 @@ import React from 'react';
 import SEO from '../components/SEO';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import '../styles/index.scss';
 
 export default () => (
     <React.Fragment>

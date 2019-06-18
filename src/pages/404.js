@@ -3,7 +3,6 @@ import {Link} from 'gatsby';
 import SEO from '../components/SEO';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import '../styles/index.scss';
 
 export default () => (
     <>

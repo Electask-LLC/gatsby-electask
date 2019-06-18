@@ -23,7 +23,12 @@ export default () => (
                 </Link>
             </div>
             <div className="col-12 col-md-7 mt-5 mt-md-0">
-                <Video className="shadow" controls>
+                <Video
+                    preload="none"
+                    className="shadow"
+                    poster="https://electask.s3-us-west-1.amazonaws.com/video-thumbnail.png"
+                    controls
+                >
                     <source
                         src="https://electask.s3-us-west-1.amazonaws.com/jill.mp4"
                         type="video/mp4"
