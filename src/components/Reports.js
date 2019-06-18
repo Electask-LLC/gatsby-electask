@@ -24,8 +24,8 @@ export default () => {
                     />
                 </div>
                 <div className="col-12 col-md-6 col-lg-4 order-md-first">
-                    <h3 class="h3 font-weight-bold">See How It's Going</h3>
-                    <p class="font-weight-bold">
+                    <h3 className="h3 font-weight-bold">See How It's Going</h3>
+                    <p className="font-weight-bold">
                         Electask offers regular reports showing what was
                         completed, what's being worked on, and what is falling
                         behind. How often these reports are sent out is up to

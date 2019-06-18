@@ -24,10 +24,10 @@ export default () => {
                     />
                 </div>
                 <div className="col-12 col-md-6 col-lg-4 order-md-first">
-                    <h3 class="mb-md-4 font-weight-bold">
+                    <h3 className="mb-md-4 font-weight-bold">
                         More aware. More control.
                     </h3>
-                    <p class="font-weight-bold">
+                    <p className="font-weight-bold">
                         Electask has built-in, automated reminders. It will send
                         everyone on each task reminders 1 week out from the task
                         due date and on the due date itself so everyone can be

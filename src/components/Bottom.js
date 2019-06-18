@@ -39,7 +39,7 @@ const Bottom = () => {
             <div className="row justify-content-center mt-5">
                 <div className="col-12 text-center">
                     <Link
-                        href="/schedule"
+                        to="/schedule"
                         className="btn btn-lg btn-outline-primary"
                     >
                         See It Yourself Today

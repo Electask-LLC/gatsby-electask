@@ -93,7 +93,7 @@ const Footer = () => {
                             <span className="border-bottom">Product</span>
                         </h6>
                         <small>
-                            <Link href="/schedule" className="text-white">
+                            <Link to="/schedule" className="text-white">
                                 Schedule a Demo
                             </Link>
                         </small>
