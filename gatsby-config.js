@@ -70,14 +70,6 @@ module.exports = {
                 // dataLayerName: 'GTM-KL8BJMB'
             }
         },
-        `gatsby-plugin-sitemap`,
-        {
-            resolve: `gatsby-plugin-crisp-chat`,
-            options: {
-                websiteId: '2d6c25c8-b034-43a9-a3cd-439b1f56addd',
-                enableDuringDevelop: false,
-                defer: true
-            }
-        }
+        `gatsby-plugin-sitemap`
     ]
 };
