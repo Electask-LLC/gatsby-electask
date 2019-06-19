@@ -70,6 +70,19 @@ module.exports = {
                 // dataLayerName: 'GTM-KL8BJMB'
             }
         },
-        `gatsby-plugin-sitemap`
+        `gatsby-plugin-sitemap`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Electask`,
+                short_name: `Electask`,
+                start_url: `/`,
+                background_color: `#ffffff`,
+                theme_color: `#008DB9`,
+                display: `standalone`
+            }
+        },
+        `gatsby-plugin-offline`,
+        `gatsby-plugin-netlify`
     ]
 };

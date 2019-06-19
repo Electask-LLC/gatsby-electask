@@ -23,12 +23,6 @@ export default () => {
                 name="description"
                 content={data.site.siteMetadata.description}
             />
-            <meta
-                http-equiv="Cache-control"
-                content="public"
-                max-age="0"
-                must-revalidate
-            />
         </Helmet>
     );
 };
