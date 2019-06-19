@@ -18,7 +18,6 @@ export default () => {
             }
         }
     `);
-    console.log(data.poster.sharp.fluid);
     return (
         <div className="container">
             <div className="row align-items-center my-5 py-3 py-md-5">

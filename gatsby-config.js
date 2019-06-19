@@ -70,12 +70,6 @@ module.exports = {
                 // dataLayerName: 'GTM-KL8BJMB'
             }
         },
-        `gatsby-plugin-sitemap`,
-        {
-            resolve: 'gatsby-plugin-drift',
-            options: {
-                appId: 'batxtn7gv3nt'
-            }
-        }
+        `gatsby-plugin-sitemap`
     ]
 };
