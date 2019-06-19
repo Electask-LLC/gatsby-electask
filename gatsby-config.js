@@ -29,14 +29,6 @@ module.exports = {
         },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
-        {
-            resolve: 'gatsby-plugin-hubspot',
-            options: {
-                trackingCode: '4294167',
-                // Setting this parameter is optional
-                respectDNT: true
-            }
-        },
         `gatsby-plugin-styled-components`,
         {
             resolve: `gatsby-plugin-sass`,
