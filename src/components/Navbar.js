@@ -1,6 +1,26 @@
 import React from 'react';
 import {Link, useStaticQuery, graphql} from 'gatsby';
+import styled from 'styled-components';
 import Img from 'gatsby-image';
+
+const Nav = styled.nav`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    padding: 10px 0;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        li {
+            display: inline;
+            padding: 5px;
+            a:hover {
+                cursor: pointer;
+            }
+        }
+    }
+`;
 
 export default () => {
     const data = useStaticQuery(graphql`
@@ -16,16 +36,17 @@ export default () => {
     `);
     return (
         <div className="container">
-            <nav className="navbar navbar-expand-lg navbar-light">
-                <Link
-                    className="navbar-brand text-dark position-relative pl-1"
-                    to="/"
-                >
+            <Nav>
+                <Link to="/">
                     <Img fixed={data.logo.sharp.fixed} alt="Electask" />
                 </Link>
-
-                <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
+                <ul>
+                    <li>
+                        <Link to="/video" className="nav-link text-secondary">
+                            Video
+                        </Link>
+                    </li>
+                    <li>
                         <a
                             href="https://app.electask.com"
                             className="btn btn-outline-primary"
@@ -34,7 +55,7 @@ export default () => {
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </Nav>
         </div>
     );
 };

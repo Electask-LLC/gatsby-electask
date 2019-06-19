@@ -18,6 +18,7 @@ export default () => {
             }
         }
     `);
+    console.log(data.poster.sharp.fluid);
     return (
         <div className="container">
             <div className="row align-items-center my-5 py-3 py-md-5">
@@ -27,10 +28,7 @@ export default () => {
                         The task calendar that automates the boring stuff so you
                         can focus on what's important.
                     </h2>
-                    <Link
-                        to="/schedule"
-                        className="btn btn-lg btn-primary text-white"
-                    >
+                    <Link to="/schedule" className="btn btn-danger text-white">
                         Schedule to See Electask &rarr;
                     </Link>
                 </div>
@@ -47,16 +45,6 @@ export default () => {
                         />
                         Sorry, your browser doesn't support embedded videos.
                     </Video>
-                </div>
-            </div>
-            <div className="row justify-content-centermt-5 mt-md-0 d-block d-md-none">
-                <div className="text-center">
-                    <Link
-                        to="/video"
-                        className=" h3 font-weight-bold text-dark border-bottom border-dark"
-                    >
-                        Watch Video
-                    </Link>
                 </div>
             </div>
         </div>
