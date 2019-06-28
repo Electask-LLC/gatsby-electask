@@ -16,7 +16,7 @@ export default () => {
                         The task calendar that automates the boring stuff so you
                         can focus on what's important.
                     </h2>
-                    <Link to="/schedule" className="btn btn-danger text-white">
+                    <Link to="/schedule" className="btn btn-dark text-white">
                         Schedule to See Electask &rarr;
                     </Link>
                 </div>
