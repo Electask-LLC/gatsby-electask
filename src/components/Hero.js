@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, useStaticQuery, graphql} from 'gatsby';
+import {Link} from 'gatsby';
 import styled from 'styled-components';
 
 const Video = styled.video`
@@ -7,17 +7,6 @@ const Video = styled.video`
 `;
 
 export default () => {
-    const data = useStaticQuery(graphql`
-        query {
-            poster: file(relativePath: {regex: "/video-thumbnail.png/"}) {
-                sharp: childImageSharp {
-                    fluid {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
-                }
-            }
-        }
-    `);
     return (
         <div className="container">
             <div className="row align-items-center my-5 py-3 py-md-5">
@@ -35,7 +24,7 @@ export default () => {
                     <Video
                         preload="none"
                         className="shadow"
-                        poster={data.poster.sharp.fluid}
+                        poster="https://electask.s3-us-west-1.amazonaws.com/video-thumbnail.png"
                         controls
                     >
                         <source
