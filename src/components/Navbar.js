@@ -42,6 +42,11 @@ export default () => {
                 </Link>
                 <ul>
                     <li>
+                        <Link to="/about" className="nav-link text-secondary">
+                            About
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/video" className="nav-link text-secondary">
                             Video
                         </Link>

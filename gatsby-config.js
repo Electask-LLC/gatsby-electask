@@ -48,6 +48,14 @@ module.exports = {
             }
         },
         {
+            resolve: 'gatsby-plugin-hubspot',
+            options: {
+                trackingCode: '4294167',
+                respectDNT: true,
+                productionOnly: true
+            }
+        },
+        {
             resolve: `gatsby-plugin-google-tagmanager`,
             options: {
                 id: 'GTM-KL8BJMB',
