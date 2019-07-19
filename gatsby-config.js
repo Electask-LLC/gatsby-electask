@@ -82,6 +82,13 @@ module.exports = {
                 display: `standalone`
             }
         },
+        {
+            resolve: 'gatsby-plugin-mailchimp',
+            options: {
+                endpoint:
+                    'https://electask.us17.list-manage.com/subscribe/post?u=fe1e9832971d47b2cfd5741c8&amp;id=b5824200cf'
+            }
+        },
         `gatsby-plugin-offline`,
         `gatsby-plugin-netlify`
     ]

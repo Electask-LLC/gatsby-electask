@@ -13,8 +13,12 @@ function About() {
             <SEO />
             <Navbar />
             <AboutHero />
-            <DarkNewsletter />
-            <Background />
+            <div className="mt-">
+                <DarkNewsletter bg="dark" />
+            </div>
+            <div className="mb-5">
+                <Background bg="light" />
+            </div>
             <Bottom />
             <Footer />
         </React.Fragment>
