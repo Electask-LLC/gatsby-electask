@@ -11,12 +11,16 @@ function Hero() {
         <div className="container">
             <div className="row align-items-center my-5 py-3 py-md-5">
                 <div className="col-12 col-md-5">
-                    <h1 className="font-weight-bold">Election Task Calendar</h1>
-                    <h2 className="lead font-weight-light my-4">
-                        The task calendar that automates the boring stuff so you
-                        can focus on what's important.
+                    <h1 className="font-weight-bold">Election Task Manager</h1>
+                    <h2 className="lead my-4">
+                        The election task manager that keeps track of election
+                        tasks and reminds everyone of important things coming
+                        up.
                     </h2>
-                    <Link to="/schedule" className="btn btn-dark text-white">
+                    <Link
+                        to="/schedule"
+                        className="btn btn-lg btn-dark text-white"
+                    >
                         Schedule to See Electask &rarr;
                     </Link>
                 </div>
