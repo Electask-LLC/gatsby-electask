@@ -13,7 +13,7 @@ export default () => {
                         controls
                     >
                         <source
-                            src="https://electask.s3-us-west-1.amazonaws.com/Electask.mp4"
+                            src="https://electask-bucket.s3.us-west-1.amazonaws.com/Electask.mp4"
                             type="video/mp4"
                         />
                         Sorry, your browser doesn't support embedded videos.

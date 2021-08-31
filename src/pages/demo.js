@@ -14,7 +14,7 @@ export default () => {
             </h2>
             <video preload="none" className="shadow bg-primary w-100" controls>
               <source
-                src="https://electask.s3-us-west-1.amazonaws.com/electask_demo_2020.mp4"
+                src="https://electask-bucket.s3.us-west-1.amazonaws.com/electask_demo_2020.mp4"
                 type="video/mp4"
               />
               Sorry, your browser doesn't support embedded videos.
