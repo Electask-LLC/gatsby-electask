@@ -18,14 +18,12 @@ function AboutHero() {
     <div className="container">
       <div className="row align-items-center my-5 py-3 py-md-5">
         <div className="col-12 col-md-5">
-          <h1 className="font-weight-bold">Hi, I'm Tom</h1>
+          <h1 className="font-weight-light">About 1.5¢ per Resident Per Year</h1>
           <h2 className="lead my-4">
-            I used to work for Sacramento County Voter Registration. Then I
-            learned to code. Then I built Electask and still work on it
-            regularly to make it the best product I can make.
+          Track all your election tasks with pricing that scales as your county grows
           </h2>
           <a href="mailto:tom@electask.com" className="btn btn-dark text-white">
-            Send Me A Message &rarr;
+            Schedule a Demo &rarr;
           </a>
         </div>
         <div className="col-12 col-md-7 mt-5 mt-md-0 d-none d-md-block text-center">
