@@ -50,7 +50,7 @@ function Feature() {
             </SVG>
             <div className="py-md-3 col-12 col-md-6 p-5 mx-auto bg-white rounded border border-muted shadow">
                 <h2 className="text-center">
-                    "This fits an election official's needs."
+                    “To any registrar that isn’t using this type of software, you’re behind the times...that is all there is to it!”
                 </h2>
                 <p className="text-italics text-center">
                     ~ Jill LaVine - Former Sacramento County Registrar of Voters
