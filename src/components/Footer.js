@@ -48,7 +48,12 @@ function Footer() {
                             </Link>
                         </small>
                         <br /> */
-            <br />
+             <small>
+              <a href={data.opag.publicURL} className="text-white">
+                Operating Agreement
+              </a>
+            </small>
+              <br />
             <small>
               <a href="mailto:max@electask.com" className="text-white">
                 Contact Us
