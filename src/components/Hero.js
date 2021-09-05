@@ -17,7 +17,7 @@ function Hero() {
                     </h2>
                     <Link
                         to="/schedule"
-                        className="btn btn-lg btn-blue text-white"
+                        className="btn btn-lg btn-dark text-white"
                     >
                         Schedule to See Electask &rarr;
                     </Link>
