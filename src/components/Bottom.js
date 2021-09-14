@@ -8,17 +8,13 @@ const Bottom = () => {
                 <div className="col-12 col-md-4">
                     <h3 className="h3 font-weight-bold mt-5">Support</h3>
                     <p className="font-weight-bold">
-                        If you need help, you can reach out via chat or text and
-                        I'll help you get back at it. During elections, I'll be
-                        here for you 24/7. When it's not so crazy, you can reach
-                        me from 8 am to 5 pm your local time. Plus I'm really
-                        nice (if I do say so myself)!
+                        We are available for support via email, text, and call when you need it. Do not hesitate to contact us.
                     </p>
                 </div>
                 <div className="col-12 col-md-4">
                     <h3 className="h3 font-weight-bold mt-5">Updates</h3>
                     <p className="font-weight-bold">
-                       Electask will continue to improve functionality and use over time. 
+                       Electask will continue to improve functionality over time. 
                        If you have suggestions for additional features or other requests, 
                            please reach out!
                     </p>
