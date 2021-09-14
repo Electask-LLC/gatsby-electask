@@ -18,21 +18,17 @@ const Bottom = () => {
                 <div className="col-12 col-md-4">
                     <h3 className="h3 font-weight-bold mt-5">Updates</h3>
                     <p className="font-weight-bold">
-                        Electask is a growing, living thing. I'm always trying
-                        to make it better, more user-friendly, and updade the
-                        tech to keep it on the cutting edge. Also, if you think
-                        of something that would make Electask better,
+                       Electask will continue to improve functionality and use over time. 
+                       If you have suggestions for additional features or other requests, 
+                           please reach out!
                     </p>
                 </div>
                 <div className="col-12 col-md-4">
                     <h3 className="h3 font-weight-bold mt-5">Security</h3>
                     <p className="font-weight-bold">
                         Security is standard with Electask. All communication
-                        between Electask and servers and databases are all
-                        encrypted. Each organization has their own database so
-                        there's no mixing data. Also, each database is regularly
-                        backed up, so if anything were to happen, your data
-                        would be safe.
+                        between Electask and servers and databases are encrypted.
+                
                     </p>
                 </div>
             </div>
@@ -42,7 +38,7 @@ const Bottom = () => {
                         to="/schedule"
                         className="btn btn-lg btn-outline-primary"
                     >
-                        See It Yourself Today
+                        Book a Demo
                     </Link>
                 </div>
             </div>
