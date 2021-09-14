@@ -13,7 +13,7 @@ function Hero() {
                 <div className="col-12 col-md-5">
                     <h1 className="font-weight-light">Track all your election tasks in one place</h1>
                     <h2 className="lead my-4">
-                        Electask empowers forward-thinking election officials to manage all of their teams' tasks for just 1.5¢ per resident
+                        Electask empowers forward-thinking election officials to manage all of their teams election tasks
                     </h2>
                     <Link
                         to="/schedule"
