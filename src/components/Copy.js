@@ -20,16 +20,13 @@ function Copy() {
         <div className="col-12 col-md-6 col-lg-4">
           <Img
             fluid={data.copy.sharp.fluid}
-            alt="Copy tasks from one election to another automatically"
+            alt="Assign tasks"
           />
         </div>
         <div className="col-12 col-md-6 col-lg-4">
-          <h3 className="h3 font-weight-bold">Copy Tasks Over Automatically</h3>
+          <h3 className="h3 font-weight-bold">Never miss a deadline</h3>
           <p className="font-weight-bold">
-            Many elections are pretty similar in what you have to do to get them
-            done. That's why Electask has an automated process to copy tasks
-            from one election to another with the click of a button. All the
-            task due dates are updated based on the new election E-Date.
+            Electask lets you assign tasks to specific people or positions and remind them automatically so you never miss deadlines 
           </p>
           <Link
             to="/schedule"
