@@ -19,7 +19,7 @@ function Hero() {
                         to="/schedule"
                         className="btn btn-lg btn-dark text-white"
                     >
-                        Schedule to See Electask &rarr;
+                        Schedule a Demo &rarr;
                     </Link>
                 </div>
                 <div className="col-12 col-md-7 mt-5 mt-md-0 d-none d-md-block">
