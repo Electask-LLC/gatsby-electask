@@ -43,7 +43,7 @@ function Navbar() {
         <ul>
           <li>
             <Link to="/about" className="nav-link text-secondary">
-              About
+              Pricing
             </Link>
           </li>
           <li>
