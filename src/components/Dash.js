@@ -28,9 +28,7 @@ function Dash() {
             More aware. More control.
           </h3>
           <p className="font-weight-bold">
-            Electask has built-in, automated reminders. It will send everyone on
-            each task reminders 1 week out from the task due date and on the due
-            date itself so everyone can be aware of what's going on.
+          Electask's dashboard lets you see your teams' activities in one place and make sure everyone is on track.
           </p>
           <Link
             to="/schedule"
