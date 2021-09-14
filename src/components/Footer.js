@@ -47,14 +47,8 @@ function Footer() {
                         </small>
                         <br /> */}
             <small>
-              <a href={data.opag.publicURL} className="text-white">
-                Operating Agreement
-              </a>
-            </small>
-            <br />
-            <small>
-              <a href="mailto:tom@electask.com" className="text-white">
-                Contact Me
+              <a href="mailto:max@electask.com" className="text-white">
+                Contact Us
               </a>
             </small>
           </div>
@@ -63,7 +57,7 @@ function Footer() {
               <span className="border-bottom">Company</span>
             </h6>
             <small>
-              <a href="mailto:tom@electask.com" className="text-white">
+              <a href="mailto:max@electask.com" className="text-white">
                 Careers
               </a>
             </small>
