@@ -22,7 +22,7 @@ function AboutHero() {
           <h2 className="lead my-4">
             Electask costs around 1.5¢ per county resident per year
           </h2>
-          <a href="mailto:max@electask.com" className="btn btn-dark text-white">
+          <a href="/schedule" className="btn btn-dark text-white">
             Get in touch &rarr;
           </a>
         </div>
