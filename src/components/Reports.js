@@ -24,12 +24,9 @@ function Report() {
           />
         </div>
         <div className="col-12 col-md-6 col-lg-4 order-md-first">
-          <h3 className="h3 font-weight-bold">See How It's Going</h3>
+          <h3 className="h3 font-weight-bold">Run Multiple Elections Concurrently</h3>
           <p className="font-weight-bold">
-            Electask offers regular reports showing what was completed, what's
-            being worked on, and what is falling behind. How often these reports
-            are sent out is up to you. You can also be notified in a few
-            different ways if anything really important is past it's due date.
+            With Electask, you can run multiple elections at once and even copy tasks between them. 
           </p>
           <Link
             to="/schedule"
