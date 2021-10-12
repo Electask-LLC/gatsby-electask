@@ -12,13 +12,13 @@ function Background({bg}) {
                     with software. When they couldn't find a solution, we built Electask!
                 </p>
                 <p>
-                    Electask allow counties to track their tasks in one place without an expensive
-                    election management suite. This allows counties to be better stewards of taxpayer
+                    Since then, Electask has allowed counties to track their tasks in one place without an expensive
+                    election management suite. This allows those counties to be better stewards of taxpayer
                     dollars.
                 </p>
                 <p>
                     We wanted to help because we've worked in local and state government and
-                    want to make sure that they get top-notch software at a great price. We'd
+                   we want to make sure that they get top-notch software that is affordable. We'd
                     love to talk to you about your county's needs!
                 
                 </p>
