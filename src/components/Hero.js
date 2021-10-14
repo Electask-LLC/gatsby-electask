@@ -26,7 +26,7 @@ function Hero() {
                     <Video
                         preload="none"
                         className="shadow"
-                        poster="https://electask-bucket.s3.us-west-1.amazonaws.com/video-thumbnail.png"
+                        poster="https://electask-bucket.s3.us-west-1.amazonaws.com/jill_screenshot.png"
                         controls
                     >
                         <source
